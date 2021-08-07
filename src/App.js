@@ -1,36 +1,38 @@
 import React from "react";
-
-const memes = [
-{
-  title: "Mem 1",
-  upvotes: 6,
-  downvotes: 1,
-  img: "images/mem1.jpg"
-},
-
-{
-  title: "Mem 2",
-  upvotes: 3,
-  downvotes: 0,
-  img: "images/mem2.jpg"
-},
-
-{
-  title: "Mem 3",
-  upvotes: 4,
-  downvotes: 2,
-  img: "images/mem3.jpg"
-},
+import styled from "styled-components";
+import {memesList} from "./database/database.js";
 
 
-]
+const MemeList = (props) => (
+
+  <>
+  <ul>
+     {props.memes.map(mem => {
+
+      const {img} = mem;
+      
+      return (
+        <li>
+          UP: {mem.upvotes}, DOWN: {mem.downvotes}
+
+          <div>
+            <img  src={img}  alt="img"/>
+          </div>
+        </li>
+      )
+     
+    })} 
+  </ul>
+  </>
+);
+
 
 function App() {
   return (
-    <div className="App">
-      <p><strong>Meme Servive</strong></p>
-      <p>Hello Guest</p>
-    </div>
+    <>
+    <p>ELO</p>
+    <MemeList memes={memesList}/>
+    </>
   );
 }
 
