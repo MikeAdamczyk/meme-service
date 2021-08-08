@@ -1,25 +1,18 @@
 import React from "react";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { memesList } from "./database/database.js";
-import { theme } from "./theme"
-
-const VoteButton = styled.button`
-  border: 2px solid #e3e3e3;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px 0px #ccc;
-  padding: 10px 20px;
-  margin: 10px;
-  background: ${({theme}) => theme.colors.white};
-  color: ${({ color }) => color || "black"};
-  font-weight: bold;
-  transition: 0.4s ease-in-out;
-
-  &:hover{
-    background: ${({ color }) => color==="red" ? "red" : "green"};
-    color: ${({theme}) => theme.colors.white};
-    cursor: pointer;
-  }
-`;
+import { theme } from "./theme";
+import {
+  MemeTitle,
+  TileElement,
+  Image,
+  VoteButton,
+  VoteBox,
+  Wrapper,
+  Header,
+} from "./common/styled.js";
+import { Menu } from "./menu/styled.js";
+import { Main } from "./main/styled.js";
 
 const MemeList = (props) => (
   <>
@@ -29,11 +22,16 @@ const MemeList = (props) => (
 
         return (
           <li key={mem.id}>
-            <div>
-              <img src={img} alt="img" />
-            </div>
-            <VoteButton color="green">👍 Upvote: {mem.upvotes} </VoteButton>
-            <VoteButton color="red">👎 Downvote: {mem.downvotes}</VoteButton>
+            <TileElement>
+              <MemeTitle>{mem.title}</MemeTitle>
+              <div>
+                <Image src={img} alt="img" />
+              </div>
+              <VoteBox>
+                <VoteButton color="green">👍 Cool: {mem.upvotes} </VoteButton>
+                <VoteButton color="red">👎 Crap: {mem.downvotes}</VoteButton>
+              </VoteBox>
+            </TileElement>
           </li>
         );
       })}
@@ -44,8 +42,14 @@ const MemeList = (props) => (
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <p>MEMES LIST</p>
-      <MemeList memes={memesList} />
+      <Wrapper>
+        <Menu>
+          <Header>MEMES SERVICE</Header>
+        </Menu>
+        <Main>
+          <MemeList memes={memesList} />
+        </Main>
+      </Wrapper>
     </ThemeProvider>
   );
 }

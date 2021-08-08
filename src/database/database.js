@@ -7,7 +7,7 @@ var uniqid = require("uniqid");
 export const memesList = [
   {
     id: uniqid("mem-"),
-    title: "Mem 1",
+    title: "Memory",
     upvotes: 6,
     downvotes: 1,
     img: mem1,
@@ -15,7 +15,7 @@ export const memesList = [
 
   {
     id: uniqid("mem-"),
-    title: "Mem 2",
+    title: "States",
     upvotes: 3,
     downvotes: 0,
     img: mem2,
@@ -23,7 +23,7 @@ export const memesList = [
 
   {
     id: uniqid("mem-"),
-    title: "Mem 3",
+    title: "Teacher",
     upvotes: 4,
     downvotes: 2,
     img: mem3,
@@ -31,7 +31,7 @@ export const memesList = [
 
   {
     id: uniqid("mem-"),
-    title: "Mem 4",
+    title: "Function",
     upvotes: 5,
     downvotes: 0,
     img: mem4,
