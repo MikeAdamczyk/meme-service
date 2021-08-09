@@ -13,10 +13,11 @@ import {
 } from "./common/styled.js";
 import { Menu } from "./menu/styled.js";
 import { Main } from "./main/styled.js";
+import { Footer } from "./footer/index.js";
 
 const MemeList = (props) => (
   <>
-    <ul style={{ listStyleType: "none" }}>
+    <ul style={{ listStyleType: "none", paddingLeft: "0px" }}>
       {props.memes.map((mem) => {
         const { img } = mem;
 
@@ -48,6 +49,10 @@ function App() {
         </Menu>
         <Main>
           <MemeList memes={memesList} />
+          <Footer
+            title="Thanks for your visit and have a nice day :)"
+            copyright="© Copyright by Michał Adamczyk 2020. Wszelkie prawa zastrzeżone!"
+          />
         </Main>
       </Wrapper>
     </ThemeProvider>
