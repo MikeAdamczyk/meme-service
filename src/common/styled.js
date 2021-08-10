@@ -75,6 +75,5 @@ export const VoteBox = styled.div`
 
 export const Header = styled.h1`
     color: ${({ theme }) => theme.colors.black};
-    /* position: fixed; */
-    
+    font-size: 3rem;
  `;

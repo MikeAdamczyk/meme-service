@@ -9,9 +9,8 @@ import {
   VoteButton,
   VoteBox,
   Wrapper,
-  Header,
 } from "./common/styled.js";
-import { Menu } from "./menu/styled.js";
+import { MenuBox } from "./menu/index.js";
 import { Main } from "./main/styled.js";
 import { Footer } from "./footer/index.js";
 
@@ -44,14 +43,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
-        <Menu>
-          <Header>MEMES SERVICE</Header>
-        </Menu>
+        <MenuBox/>
         <Main>
           <MemeList memes={memesList} />
           <Footer
             title="Thanks for your visit and have a nice day :)"
-            copyright="© Copyright by Michał Adamczyk 2020. Wszelkie prawa zastrzeżone!"
+            copyright="Copyright by Michał Adamczyk 2021 © Wszelkie prawa zastrzeżone!"
           />
         </Main>
       </Wrapper>
