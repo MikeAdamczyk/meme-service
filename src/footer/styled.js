@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterInfo = styled.footer`
     text-align: center;
-    color: ${({ theme }) => theme.colors.darkerGrey};
+    color: ${({ theme }) => theme.colors.darkGrey};
     font-size: 18px;
     margin-bottom: 50px;
 

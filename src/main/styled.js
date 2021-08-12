@@ -7,3 +7,11 @@ export const Main = styled.main`
     display: flex;
     flex-direction: column;
 `;
+
+export const Header = styled.h1`
+   margin-top: 50px;
+   margin-bottom: 0px;
+   font-weight: bold;
+   font-size: 42px;
+   text-align: center;
+`;

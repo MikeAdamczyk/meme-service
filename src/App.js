@@ -1,59 +1,22 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import { memesList } from "./database/database.js";
-import { theme } from "./theme";
 import {
-  MemeTitle,
-  TileElement,
-  Image,
-  VoteButton,
-  VoteBox,
-  Wrapper,
-} from "./common/styled.js";
-import { MenuBox } from "./menu/index.js";
-import { Main } from "./main/styled.js";
-import { Footer } from "./footer/index.js";
+  HashRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import { SinglePage } from "./SinglePage/index.js";
+import { memesList } from "./database/database.js";
 
-const MemeList = (props) => (
-  <>
-    <ul style={{ listStyleType: "none", paddingLeft: "0px" }}>
-      {props.memes.map((mem) => {
-        const { img } = mem;
+const hotMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes > 5);
+const regularMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes <= 5);
 
-        return (
-          <li key={mem.id}>
-            <TileElement>
-              <MemeTitle>{mem.title}</MemeTitle>
-              <div>
-                <Image src={img} alt="img" />
-              </div>
-              <VoteBox>
-                <VoteButton color="green">👍 Cool: {mem.upvotes} </VoteButton>
-                <VoteButton color="red">👎 Crap: {mem.downvotes}</VoteButton>
-              </VoteBox>
-            </TileElement>
-          </li>
-        );
-      })}
-    </ul>
-  </>
+export const App = () => (
+  <Router>
+    <Switch>
+      <Route path="/hot" render={() => <SinglePage header="Hot" memes={hotMemes} />} />
+      <Route path="/regular" render={() => <SinglePage header="Regular" memes={regularMemes}/>} />
+      <Route path="/" render={() => <Redirect to="/regular" />} />
+    </Switch>
+  </Router>
 );
-
-function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <Wrapper>
-        <MenuBox/>
-        <Main>
-          <MemeList memes={memesList} />
-          <Footer
-            title="Thanks for your visit and have a nice day :)"
-            copyright="Copyright by Michał Adamczyk 2021 © Wszelkie prawa zastrzeżone!"
-          />
-        </Main>
-      </Wrapper>
-    </ThemeProvider>
-  );
-}
-
-export default App;

@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  StyledNavigation,
-  StyledItem,
-  AsideSection,
-} from "./styled";
-import { Header } from "../common/styled.js";
-// import { StyledNavLink } from "../../../CommonStyles/styled";
+import { StyledNavigation, StyledItem, AsideSection } from "./styled";
+import { Header, StyledNavLink } from "../menu/styled.js";
 
 export const MenuBox = () => (
   <AsideSection>
@@ -13,12 +8,10 @@ export const MenuBox = () => (
     <nav>
       <StyledNavigation>
         <StyledItem>
-          {/* <StyledNavLink to="/movies">MOVIES</StyledNavLink> */}
-          HOT
+          <StyledNavLink to="/hot">HOT</StyledNavLink>
         </StyledItem>
         <StyledItem>
-          {/* <StyledNavLink to="/people">PEOPLE</StyledNavLink> */}
-          REGULAR
+          <StyledNavLink to="/regular">REGULAR</StyledNavLink>
         </StyledItem>
       </StyledNavigation>
     </nav>

@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const MemeTitle = styled.h1`
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.tealDark};
     font-weight: 600;
     font-size: 32px;
     line-height: 120%;
@@ -72,8 +72,3 @@ export const VoteBox = styled.div`
     display: flex;
     justify-content: center;
 `;
-
-export const Header = styled.h1`
-    color: ${({ theme }) => theme.colors.black};
-    font-size: 3rem;
- `;

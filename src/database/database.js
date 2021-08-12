@@ -8,7 +8,7 @@ export const memesList = [
   {
     id: uniqid("mem-"),
     title: "Memory",
-    upvotes: 6,
+    upvotes: 9,
     downvotes: 1,
     img: mem1,
   },
@@ -32,7 +32,7 @@ export const memesList = [
   {
     id: uniqid("mem-"),
     title: "Function",
-    upvotes: 5,
+    upvotes: 7,
     downvotes: 0,
     img: mem4,
   },
