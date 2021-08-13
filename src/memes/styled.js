@@ -1,4 +1,29 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import StarsIcon from "@material-ui/icons/Stars";
+
+export const FavStar = styled(StarsIcon)`
+  && {
+    font-size: 34px;
+    color: ${({ theme }) => theme.colors.darkGrey};
+    flex: 1 1 10%;
+
+    ${({ favourite }) =>
+      favourite &&
+      css`
+        color: ${({ theme }) => theme.colors.orange};
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.darkGrey};
+          cursor: pointer;
+        }
+      `}
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.colors.orange};
+  }
+`;
 
 export const MemeTitle = styled.h1`
   color: ${({ theme }) => theme.colors.tealDark};
@@ -6,8 +31,9 @@ export const MemeTitle = styled.h1`
   font-size: 32px;
   line-height: 120%;
   padding: 20px;
-  margin: 0;
+  margin: 0 0 0 10%;
   text-align: center;
+  flex: 1 1 90%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     font-size: 24px;
@@ -19,6 +45,11 @@ export const MemeTitle = styled.h1`
     padding: 24px 0 12px;
     margin: 0;
   }
+`;
+
+export const TitleBox = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const TileElement = styled.div`
@@ -65,4 +96,9 @@ export const VoteButton = styled.button`
 export const VoteBox = styled.div`
   display: flex;
   justify-content: center;
+`;
+
+export const List = styled.ul`
+  list-style-type: none;
+  padding-left: 0px;
 `;

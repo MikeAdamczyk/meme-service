@@ -1,15 +1,36 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { downvote, upvote } from "../store";
-import { Image, MemeTitle, TileElement, VoteBox, VoteButton } from "./styled";
+import { downvote, upvote, toggleFavourite } from "../store";
+import {
+  Image,
+  MemeTitle,
+  TileElement,
+  VoteBox,
+  VoteButton,
+  List,
+  TitleBox,
+  FavStar,
+} from "./styled";
+import Tooltip from "@material-ui/core/Tooltip";
 
-const Meme = ({ mem, img }) => {
+const Meme = ({ mem, img, fav }) => {
   const dispatch = useDispatch();
 
   return (
     <li key={mem.id}>
       <TileElement>
-        <MemeTitle>{mem.title}</MemeTitle>
+        <TitleBox>
+          <MemeTitle>{mem.title}</MemeTitle>
+          <Tooltip
+            title={!fav ? "Add to Favourites" : "Remove from Favourites"}
+          >
+            <FavStar
+              favourite={fav}
+              onClick={() => dispatch(toggleFavourite(mem.id))}
+            />
+          </Tooltip>
+        </TitleBox>
+
         <div>
           <Image src={img} alt="img" />
         </div>
@@ -27,13 +48,11 @@ const Meme = ({ mem, img }) => {
 };
 
 export const MemeList = ({ memes }) => (
-  <>
-    <ul style={{ listStyleType: "none", paddingLeft: "0px" }}>
-      {memes.map((mem) => {
-        const { img } = mem;
-
-        return <Meme mem={mem} img={img} />;
-      })}
-    </ul>
-  </>
+  <List>
+    {memes.map((mem) => {
+      const { img } = mem;
+      const { favourite } = mem;
+      return <Meme mem={mem} img={img} fav={favourite} />;
+    })}
+  </List>
 );

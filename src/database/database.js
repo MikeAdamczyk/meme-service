@@ -11,6 +11,7 @@ export const memesList = [
     upvotes: 9,
     downvotes: 1,
     img: mem1,
+    favourite: true,
   },
 
   {
@@ -19,6 +20,7 @@ export const memesList = [
     upvotes: 3,
     downvotes: 0,
     img: mem2,
+    favourite: false,
   },
 
   {
@@ -27,6 +29,7 @@ export const memesList = [
     upvotes: 4,
     downvotes: 2,
     img: mem3,
+    favourite: true,
   },
 
   {
@@ -35,5 +38,6 @@ export const memesList = [
     upvotes: 7,
     downvotes: 0,
     img: mem4,
+    favourite: false,
   },
 ];

@@ -9,7 +9,6 @@ import {
 import { SinglePage } from "./SinglePage/index.js";
 
 export const App = () => {
-  
   const memesList = useSelector((state) => state.memes);
   const hotMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes > 5);
   const regularMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes <= 5);
@@ -22,5 +21,4 @@ export const App = () => {
     </Switch>
   </Router>
   )
-
 };
