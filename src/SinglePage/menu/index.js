@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledNavigation, StyledItem, AsideSection } from "./styled";
-import { Header, StyledNavLink } from "../menu/styled.js";
+import { Header, StyledNavLink } from "./styled.js";
 
 export const MenuBox = () => (
   <AsideSection>

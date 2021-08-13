@@ -1,9 +1,8 @@
 import React from "react";
-import { Wrapper } from "../common/styled.js";
-import { Main, Header } from "../main/styled.js";
-import { Footer } from "../footer/index.js";
-import { MenuBox } from "../menu/index.js";
-import { MemeList } from "../common/index.js";
+import { Wrapper, Main, Header } from "./styled.js";
+import { Footer } from "./footer/index.js";
+import { MenuBox } from "./menu/index.js";
+import { MemeList } from "../memes/index.js";
 
 export const SinglePage = ({ header, memes }) => (
   <Wrapper>
