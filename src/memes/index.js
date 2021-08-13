@@ -35,10 +35,10 @@ const Meme = ({ mem, img, fav }) => {
           <Image src={img} alt="img" />
         </div>
         <VoteBox>
-          <VoteButton onClick={() => dispatch(upvote(mem.id))} color="green">
+          <VoteButton onClick={() => dispatch(upvote(mem.id))} color={({ theme }) => theme.colors.green}>
             👍 Cool: {mem.upvotes}
           </VoteButton>
-          <VoteButton onClick={() => dispatch(downvote(mem.id))} color="red">
+          <VoteButton onClick={() => dispatch(downvote(mem.id))} color={({ theme }) => theme.colors.red}>
             👎 Crap: {mem.downvotes}
           </VoteButton>
         </VoteBox>
