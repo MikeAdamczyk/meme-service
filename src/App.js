@@ -12,11 +12,13 @@ export const App = () => {
   const memesList = useSelector((state) => state.memes);
   const hotMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes > 5);
   const regularMemes = memesList.filter((meme) => meme.upvotes - meme.downvotes <= 5);
+  const favouriteMemes = memesList.filter((meme) => meme.favourite);
   return (
     <Router>
     <Switch>
       <Route path="/hot" render={() => <SinglePage header="Hot" memes={hotMemes} />} />
       <Route path="/regular" render={() => <SinglePage header="Regular" memes={regularMemes}/>} />
+      <Route path="/favourites" render={() => <SinglePage header="Favourites" memes={favouriteMemes}/>} />
       <Route path="/" render={() => <Redirect to="/regular" />} />
     </Switch>
   </Router>

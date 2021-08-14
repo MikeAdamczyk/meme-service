@@ -13,6 +13,9 @@ export const MenuBox = () => (
         <StyledItem>
           <StyledNavLink to="/regular">REGULAR</StyledNavLink>
         </StyledItem>
+        <StyledItem>
+          <StyledNavLink to="/favourites">FAVOURITES</StyledNavLink>
+        </StyledItem>
       </StyledNavigation>
     </nav>
   </AsideSection>
