@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const rotate = keyframes`
+const shine = keyframes`
   from {
     mask-position: 150%;
   }
@@ -12,13 +12,13 @@ const rotate = keyframes`
 `;
 
 export const Header = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 120%;
 
   &:hover{
   mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-  mask-size: 200%;
-  animation: ${rotate} 1s ease-in-out infinite;
+  mask-size: 180%;
+  animation: ${shine} 1s ease-in-out infinite;
 }
 `;
 

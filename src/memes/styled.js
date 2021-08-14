@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import StarsIcon from "@material-ui/icons/Stars";
 
 export const FavStar = styled(StarsIcon)`
@@ -97,4 +97,28 @@ export const VoteBox = styled.div`
 export const List = styled.ul`
   list-style-type: none;
   padding-left: 0px;
+`;
+
+const rotate = keyframes`
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+`;
+
+export const NotFoundImage = styled.img`
+  margin: auto;
+  width: 30%;
+
+  &:hover {
+    animation: ${rotate} 1s ease-in-out infinite;
+  }
+`;
+
+export const NotFoundInfo = styled.p`
+  margin: auto;
+  padding-top: 2rem;
+  font-size: 2rem;
 `;
