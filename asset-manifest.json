@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/meme-service/static/js/main.e5ff7b95.chunk.js",
+    "main.js.map": "/meme-service/static/js/main.e5ff7b95.chunk.js.map",
+    "runtime-main.js": "/meme-service/static/js/runtime-main.3bfd390e.js",
+    "runtime-main.js.map": "/meme-service/static/js/runtime-main.3bfd390e.js.map",
+    "static/js/2.83dcf998.chunk.js": "/meme-service/static/js/2.83dcf998.chunk.js",
+    "static/js/2.83dcf998.chunk.js.map": "/meme-service/static/js/2.83dcf998.chunk.js.map",
+    "index.html": "/meme-service/index.html",
+    "static/js/2.83dcf998.chunk.js.LICENSE.txt": "/meme-service/static/js/2.83dcf998.chunk.js.LICENSE.txt",
+    "static/media/NotFound.4ffa18b6.png": "/meme-service/static/media/NotFound.4ffa18b6.png",
+    "static/media/mem1.e91f993f.jpg": "/meme-service/static/media/mem1.e91f993f.jpg",
+    "static/media/mem2.b4a230ad.jpg": "/meme-service/static/media/mem2.b4a230ad.jpg",
+    "static/media/mem3.8945bcb6.jpg": "/meme-service/static/media/mem3.8945bcb6.jpg",
+    "static/media/mem4.c0d518cd.jpg": "/meme-service/static/media/mem4.c0d518cd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bfd390e.js",
+    "static/js/2.83dcf998.chunk.js",
+    "static/js/main.e5ff7b95.chunk.js"
+  ]
+}
