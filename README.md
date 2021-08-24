@@ -14,8 +14,6 @@ This app was created as a final project for **Frontend Development with React** 
 - React **Router**, React **Redux**
 - uniqid, material-ui
 
-<br>
-
 ## Author:
 
 [Michał Adamczyk](https://github.com/MikeAdamczyk)
