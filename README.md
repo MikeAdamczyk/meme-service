@@ -2,7 +2,7 @@
 
 ## Description
 
-**Meme Service** helps you to **explore best IT memes**, vote, add to favourites and and have a great time. Enjoy!
+**Meme Service** helps you to **explore best IT memes**, vote, add to favourites and have a great time. Enjoy!
 <br>
 <br>
 This app was created as a final project for **Frontend Development with React** postgraduate studies at [Kozminski University](https://www.kozminski.edu.pl/pl)

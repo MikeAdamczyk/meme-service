@@ -15,9 +15,9 @@ export const Main = styled.main`
 `;
 
 export const Header = styled.h1`
-  margin-top: 50px;
+  margin-top: 3vw;
   margin-bottom: 0px;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 3vw;
   text-align: center;
 `;

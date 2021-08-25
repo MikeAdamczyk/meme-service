@@ -3,7 +3,7 @@ import StarsIcon from "@material-ui/icons/Stars";
 
 export const FavStar = styled(StarsIcon)`
   && {
-    font-size: 34px;
+    font-size: 2.5vw;
     color: ${({ theme }) => theme.colors.darkGrey};
     flex: 1 1 10%;
     transition: 0.4s ease-in-out;
@@ -24,23 +24,12 @@ export const FavStar = styled(StarsIcon)`
 export const MemeTitle = styled.h1`
   color: ${({ theme }) => theme.colors.tealDark};
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2vw;
   line-height: 120%;
-  padding: 20px;
+  padding: 1.2vw;
   margin: 0 0 0 10%;
   text-align: center;
   flex: 1 1 90%;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    font-size: 24px;
-    padding: 36px 0 18px;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 24px 0 12px;
-    margin: 0;
-  }
 `;
 
 export const TitleBox = styled.div`
@@ -50,8 +39,8 @@ export const TitleBox = styled.div`
 
 export const TileElement = styled.div`
   width: 50%;
-  margin: 30px auto;
-  padding: 20px 60px;
+  margin: 3vw auto;
+  padding: 1vw 3vw 2vw;
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 10px;
@@ -61,7 +50,7 @@ export const TileElement = styled.div`
 export const Image = styled.img`
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
   border-radius: 10px;
   transition: filter 0.5s, transform 0.5s;
 
@@ -75,11 +64,12 @@ export const VoteButton = styled.button`
   border: none;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  padding: 10px 20px;
-  margin: 10px 10px;
+  padding: 0.5vw;
+  margin: 0.5vw;
   background: ${({ theme }) => theme.colors.white};
   color: ${({ color }) => color || "black"};
   font-weight: bold;
+  font-size: 1.2vw;
   transition: 0.4s ease-in-out;
 
   &:hover {
@@ -97,6 +87,7 @@ export const VoteBox = styled.div`
 export const List = styled.ul`
   list-style-type: none;
   padding-left: 0px;
+  margin: 0;
 `;
 
 const rotate = keyframes`
@@ -118,7 +109,7 @@ export const NotFoundImage = styled.img`
 `;
 
 export const NotFoundInfo = styled.p`
-  margin: auto;
-  padding-top: 2rem;
-  font-size: 2rem;
+  margin: 3vw auto;
+  padding-top: 3vw;
+  font-size: 3vw;
 `;
