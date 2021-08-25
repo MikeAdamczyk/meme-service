@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/meme-service/static/js/main.3cc1a90d.chunk.js",
-    "main.js.map": "/meme-service/static/js/main.3cc1a90d.chunk.js.map",
+    "main.js": "/meme-service/static/js/main.3788d448.chunk.js",
+    "main.js.map": "/meme-service/static/js/main.3788d448.chunk.js.map",
     "runtime-main.js": "/meme-service/static/js/runtime-main.3bfd390e.js",
     "runtime-main.js.map": "/meme-service/static/js/runtime-main.3bfd390e.js.map",
     "static/js/2.83dcf998.chunk.js": "/meme-service/static/js/2.83dcf998.chunk.js",
@@ -9,6 +9,7 @@
     "index.html": "/meme-service/index.html",
     "static/js/2.83dcf998.chunk.js.LICENSE.txt": "/meme-service/static/js/2.83dcf998.chunk.js.LICENSE.txt",
     "static/media/NotFound.4ffa18b6.png": "/meme-service/static/media/NotFound.4ffa18b6.png",
+    "static/media/alk-logo.44553bf8.png": "/meme-service/static/media/alk-logo.44553bf8.png",
     "static/media/mem1.e91f993f.jpg": "/meme-service/static/media/mem1.e91f993f.jpg",
     "static/media/mem10.1b38b9de.jpg": "/meme-service/static/media/mem10.1b38b9de.jpg",
     "static/media/mem11.3bbec32a.jpg": "/meme-service/static/media/mem11.3bbec32a.jpg",
@@ -24,6 +25,6 @@
   "entrypoints": [
     "static/js/runtime-main.3bfd390e.js",
     "static/js/2.83dcf998.chunk.js",
-    "static/js/main.3cc1a90d.chunk.js"
+    "static/js/main.3788d448.chunk.js"
   ]
 }
