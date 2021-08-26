@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/meme-service/static/js/main.3788d448.chunk.js",
-    "main.js.map": "/meme-service/static/js/main.3788d448.chunk.js.map",
+    "main.js": "/meme-service/static/js/main.750726a1.chunk.js",
+    "main.js.map": "/meme-service/static/js/main.750726a1.chunk.js.map",
     "runtime-main.js": "/meme-service/static/js/runtime-main.3bfd390e.js",
     "runtime-main.js.map": "/meme-service/static/js/runtime-main.3bfd390e.js.map",
     "static/js/2.83dcf998.chunk.js": "/meme-service/static/js/2.83dcf998.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/mem1.e91f993f.jpg": "/meme-service/static/media/mem1.e91f993f.jpg",
     "static/media/mem10.1b38b9de.jpg": "/meme-service/static/media/mem10.1b38b9de.jpg",
     "static/media/mem11.3bbec32a.jpg": "/meme-service/static/media/mem11.3bbec32a.jpg",
+    "static/media/mem12.10cfcb69.jpg": "/meme-service/static/media/mem12.10cfcb69.jpg",
     "static/media/mem2.b4a230ad.jpg": "/meme-service/static/media/mem2.b4a230ad.jpg",
     "static/media/mem3.8945bcb6.jpg": "/meme-service/static/media/mem3.8945bcb6.jpg",
     "static/media/mem4.c0d518cd.jpg": "/meme-service/static/media/mem4.c0d518cd.jpg",
@@ -25,6 +26,6 @@
   "entrypoints": [
     "static/js/runtime-main.3bfd390e.js",
     "static/js/2.83dcf998.chunk.js",
-    "static/js/main.3788d448.chunk.js"
+    "static/js/main.750726a1.chunk.js"
   ]
 }
