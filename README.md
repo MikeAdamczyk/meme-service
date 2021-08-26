@@ -1,4 +1,4 @@
-# Meme Service - find your favourite memes
+# **Meme Service** - find your favourite memes
 
 ![Meme Service Demo](./src/database/images/memeServicePreview.gif)
 <br>
@@ -11,19 +11,20 @@
 **Meme Service** helps you to **explore best IT memes**, vote, add to favourites and have a great time. Enjoy!
 <br>
 <br>
-This app was created as a final project for **Frontend Development with React** postgraduate studies at [Kozminski University](https://www.kozminski.edu.pl/pl)
+This app was developed as a final project for **"Frontend Development with React"** postgraduate studies at [Kozminski University](https://www.kozminski.edu.pl/pl)
 <br>
 <br>
-## Technology Stack & Methodologies
-- **HTML, Styled-Components (CSS), JavaScript, JSX**
+## Technology Stack
+- **JavaScript, JSX, Styled-Components (CSS)**, HTML
 - **React.js** bootstrapped with **create-react-app**
 - React **Router**, React **Redux**
 - uniqid, material-ui
+- deployed on **GitHub Pages**
 
 ## Author:
 
-[Michał Adamczyk](https://github.com/MikeAdamczyk)
-
+[Michał Adamczyk](https://github.com/MikeAdamczyk) \
+[My LinkedIn](https://www.linkedin.com/in/micha%C5%82-adamczyk-534503139/)
 
 ---
 
@@ -42,6 +43,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm run deploy`
+Deploy the project in GitHub Pages. \
+You need to Activate GitHub Pages first and set "homepage" in package.json \
+Example: "homepage": "https://mikeadamczyk.github.io/meme-service"
 
 ### `npm test`
 
