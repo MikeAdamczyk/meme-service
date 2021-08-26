@@ -13,7 +13,7 @@ import alkLogo from "../../database/images/alk-logo.png";
 export const MenuBox = () => (
   <AsideSection>
     <MenuSection>
-      <Header>MEMES SERVICE</Header>
+      <Header>MEME SERVICE</Header>
       <nav>
         <StyledNavigation>
           <StyledItem>

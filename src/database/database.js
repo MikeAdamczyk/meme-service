@@ -9,6 +9,7 @@ import mem8 from "./images/mem8.jpg";
 import mem9 from "./images/mem9.jpg";
 import mem10 from "./images/mem10.jpg";
 import mem11 from "./images/mem11.jpg";
+import mem12 from "./images/mem12.jpg";
 var uniqid = require("uniqid");
 
 export const memesList = [
@@ -54,7 +55,7 @@ export const memesList = [
     upvotes: 4,
     downvotes: 2,
     img: mem5,
-    favourite: true,
+    favourite: false,
   },
 
   {
@@ -109,5 +110,14 @@ export const memesList = [
     downvotes: 0,
     img: mem11,
     favourite: true,
+  },
+
+  {
+    id: uniqid("mem-"),
+    title: "Adding",
+    upvotes: 7,
+    downvotes: 0,
+    img: mem12,
+    favourite: false,
   },
 ];
