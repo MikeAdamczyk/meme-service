@@ -1,5 +1,11 @@
 # Meme Service - find your favourite memes
 
+![Meme Service Demo](./src/database/images/memeServicePreview.gif)
+<br>
+<br>
+## Demo
+[Meme Service (GitHub Pages)](https://mikeadamczyk.github.io/meme-service/)
+
 ## Description
 
 **Meme Service** helps you to **explore best IT memes**, vote, add to favourites and have a great time. Enjoy!
